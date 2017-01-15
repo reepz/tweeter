@@ -1,4 +1,7 @@
 Rails.application.configure do
+  # Rails.application.routes.default_url_options[:host] = 'localhost:3000'
+  host = 'localhost:3000'                     # Local server
+  config.action_mailer.default_url_options = { host: host, protocol: 'http' }
   # Settings specified here will take precedence over those in config/application.rb.
 
   # The test environment is used exclusively to run your application's
