@@ -1,0 +1,49 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+wakeup:
+  content: "WOW! I just woke up. haha guys!"
+  created_at: <%= 20.minutes.ago %>
+  user: archer
+
+coffee:
+  content: "I just had cold shower and coffee(script))"
+  created_at: <%= 2.years.ago %>
+  user: archer
+
+todo_list:
+  content: "I decided to stick to the plan, so far..."
+  created_at: <%= 1.month.ago %>
+  user: archer
+
+most_recent:
+  content: "rewolucja na baltyku, pyszne lody na patyq!"
+  created_at: <%= Time.zone.now %>
+  user: archer
+
+<% 30.times do |n| %>
+micropost_<%= n %>:
+  content: <%= Faker::Lorem.sentence(5) %>
+  created_at: <%= 42.days.ago %>
+  user: archer
+<% end %>
+
+
+ants:
+  content: "Ants are cool hive animals!"
+  created_at: <%= 2.years.ago %>
+  user: lana
+
+zone:
+  content: "Danger zone bros."
+  created_at: <%= 69.day.ago %>
+  user: lana
+
+tone:
+  content: "tone of of soooothing voice. Maddness is real."
+  created_at: <%= 2.weeks.ago %>
+  user: malory
+
+depression:
+  content: "My dopamine levels are below avarage..."
+  created_at: <%= 10.minutes.ago %>
+  user: malory
